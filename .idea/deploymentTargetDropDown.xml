@@ -5,6 +5,22 @@
       <entry key="SearchScreenTest">
         <State />
       </entry>
+      <entry key="SearchScreenUITest">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\Denis\.android\avd\Nexus_5_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2025-03-15T16:15:36.119862900Z" />
+        </State>
+      </entry>
       <entry key="app">
         <State>
           <runningDeviceTargetSelectedWithDropDown>
@@ -20,6 +36,12 @@
           </runningDeviceTargetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2025-03-15T15:08:13.378028900Z" />
         </State>
+      </entry>
+      <entry key="searchResultsPersistAfterRotation()">
+        <State />
+      </entry>
+      <entry key="testNavigationToDetailScreen()">
+        <State />
       </entry>
     </value>
   </component>
