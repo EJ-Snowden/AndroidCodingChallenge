@@ -1,11 +1,13 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
     namespace = "com.example.android_codingchallenge"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.android_codingchallenge"
@@ -50,6 +52,30 @@ android {
 }
 
 dependencies {
+    implementation(libs.hilt.android.v255)
+    kapt(libs.hilt.compiler)
+    androidTestImplementation(libs.hilt.android.testing)
+    kaptAndroidTest(libs.hilt.compiler)
+    testImplementation(libs.hilt.android.testing)
+    kaptTest(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose.v120)
+
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.coil.compose)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.androidx.navigation.compose)
+
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.testing)
+
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.androidx.core.testing)
+    testImplementation(libs.junit)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

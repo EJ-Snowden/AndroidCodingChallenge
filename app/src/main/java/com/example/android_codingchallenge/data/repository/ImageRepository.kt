@@ -1,6 +1,9 @@
 package com.example.android_codingchallenge.data.repository
 
+<<<<<<< HEAD
 import com.example.android_codingchallenge.BuildConfig
+=======
+>>>>>>> a91336e (Task finished)
 import com.example.android_codingchallenge.data.local.ImageDao
 import com.example.android_codingchallenge.domain.entities.ImageDto
 import com.example.android_codingchallenge.domain.entities.ImageEntity
